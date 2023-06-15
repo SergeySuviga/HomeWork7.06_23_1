@@ -13,16 +13,20 @@ public class Main {
     public static void task1() {
         System.out.println("Задача 1");
 
-        int clientOS = 2;
+        int clientOS = 1;
+        int iOs = 0;
+        int android = 1;
 
-        if (clientOS == 0) {
+        if (clientOS == iOs) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOS == 1) {
+
+        } else if (clientOS == android) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
         else {
             System.out.println("OS не поддерживается");
-        }
+
+    }
 
     }
 
@@ -80,7 +84,6 @@ public class Main {
         }
 
     }
-
     public static void task5() {
         System.out.println("Задача 5");
         int monthNomber = 12;
