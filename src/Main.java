@@ -59,7 +59,6 @@ public class Main {
             System.out.println("Год " + year + " является високосным.");
         } else {
             System.out.println("Год " + year + " не является високосным.");
-
         }
     }
 
@@ -70,21 +69,14 @@ public class Main {
         int deliveryDaes = 1;
 
         if(deliveryDistance < 20){
-
             System.out.println("Потребуется дней: " + deliveryDaes);
-
         }else if(deliveryDistance <= 60) {
 
             System.out.println("Потребуется дней: " + (deliveryDaes + 1));
-
         }else if(deliveryDistance <= 100) {
-
             System.out.println("Потребуется дней: " + (deliveryDaes + 2));
-
         }else{
-
             System.out.println("Свыше 100 км доставки нет");
-
         }
 
     }
