@@ -13,33 +13,39 @@ public class Main {
     public static void task1() {
         System.out.println("Задача 1");
 
-        int clientOS = 1;
+        int clientOS = 2;
 
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
+        else {
+            System.out.println("OS не поддерживается");
+        }
 
     }
 
     public static void task2() {
         System.out.println("Задача 2");
-        int clientOS = 1;
-        int clieentOSDataY = 2015;
+
+        int iOs = 0;
+        int android = 1;
+        int checkYear = 2015;
+
         int divaceOff = 2015;
         String osType;
 
-        if (clientOS == 1) {
+        if (iOs == 0) {
             osType = "iOS";
-        } else if (clientOS == 1) {
+        } else if (android == 1) {
             osType = "Android";
         } else {
             System.out.println("Неизвестное OS");
             return;
         }
 
-        if (clieentOSDataY < divaceOff) {
+        if (checkYear < divaceOff) {
             System.out.println("Установите облегченную версию приложения для " + osType + " по ссылке.");
         } else {
             System.out.println("Установите версию приложения для " + osType + " по ссылке.");
@@ -60,15 +66,25 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        int deliveryDistance  = 95;
+        int deliveryDistance  = 160;
         int deliveryDaes = 1;
 
-        if (deliveryDistance <= 20){
-            System.out.println("Потребуется " +1+ " день");
-        } else if (deliveryDistance > 20 && deliveryDistance <= 60){
-            System.out.println("Потребуется " +2+ " день");
-        } else if (deliveryDistance > 60 && deliveryDistance <= 100){
-            System.out.println("Потребуется день = " +3);
+        if(deliveryDistance < 20){
+
+            System.out.println("Потребуется дней: " + deliveryDaes);
+
+        }else if(deliveryDistance <= 60) {
+
+            System.out.println("Потребуется дней: " + (deliveryDaes + 1));
+
+        }else if(deliveryDistance <= 100) {
+
+            System.out.println("Потребуется дней: " + (deliveryDaes + 2));
+
+        }else{
+
+            System.out.println("Свыше 100 км доставки нет");
+
         }
 
     }
@@ -96,6 +112,7 @@ public class Main {
             case 10:
             case 11:
                 System.out.println("Осень");
+                break;
 
             default:
                 System.out.println("Неверный номер месяца");
